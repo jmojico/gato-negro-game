@@ -25,9 +25,9 @@ barba.init({
     },
   },
   {
-    name: 'fade',
+    name: 'seq1',
     to: {
-      namespace: ['fade'],
+      namespace: ['seq1'],
     },
     leave() {},
     enter() {},

@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "dev": "webpack-dev-server --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "ngrok": "ngrok http localhost:9000"
   },
   "license": "MIT",
   "devDependencies": {

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Work+Sans:wght@300&display=swap');
 @import '~reset-css/reset.css';
 @import 'home.scss';
-@import 'fade.scss';
+@import 'seq1.scss';
 @import 'clip.scss';
 @import 'with-cover.scss';
 
@@ -68,11 +68,14 @@ header {
     background-color: #5c85ee;
   }
 
-  &.is-fade {
+  &.is-seq1 {
     --base-color: #000;
 
     background-color: #cc98c6;
   }
+
+
+  
 
   &.is-clip {
     background-color: #161636;
