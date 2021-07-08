@@ -27,12 +27,24 @@ module.exports = (env, argv) => ({
         }, {
           from: 'src/images/*',
           to: 'images/[name].[ext]',
-        }],
+        },
+        {
+          from: 'src/resources/*',
+          to: 'resources/[name].[ext]',
+        }
+      ],
       }),
     ],
   },
   module: {
     rules: [
+      {
+        test: /\.mp3$/,
+        loader: 'file-loader',
+        options: {
+          name: '[path][name].[ext]'
+        }
+      },
       {
         test: /\.js$/,
         exclude: /node_modules/,

@@ -18,14 +18,22 @@
         <div class="content">
             <h1>El Gato Negro</h1>
             <p>Edgar Allan Poe</p>
-            <a href="seq1.html">Empezar</a>
+            <!-- <a onClick="startMusic()" >Iniciar Música</a> -->
+            <a onClick="startMusic()" href="seq1.html">Empezar</a>
         </div>
         <div class="cover"><img src="./images/ojosgatonegro.webp"></img></div>
     </header>
+    <script>
+        function startMusic() {
+            const sound = new Audio('./resources/Autumn-Julian-Mojico.mp3');
+            sound.play();
+        }
+    </script>
     <script src="assets/app.js"></script>
 </body>
-<audio controls loop>
-    <source src="./resources/Una-de-Otoño.mp3" type="audio/mpeg">
+<!-- <audio controls loop>
+    <source src="./resources/Autumn-Julian-Mojico.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
-  </audio>
+</audio> -->
+
 </html>
