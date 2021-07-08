@@ -151,7 +151,8 @@ header {
 
 .cover img {
   position: absolute !important;
-  width: 500px;
+  width: 300px;
+  max-width: 300px;
   right: 0px;
   top: 50vh;
 }

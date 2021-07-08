@@ -12,17 +12,6 @@ barba.hooks.before((data) => {
 });
 
 barba.init({
-  views: [{
-    namespace: 'wrapper',
-    beforeEnter() {
-      // update the menu based on user navigation
-      menu.update();
-    },
-    afterEnter() {
-      // refresh the parallax based on new page content
-      console.log("asdasdasdad")
-    }
-  }],
   transitions: [{
     name: 'home',
     beforeOnce() {
@@ -42,6 +31,9 @@ barba.init({
     },
     leave() {},
     enter() {},
+    afterEnter(){
+      console.log("asdasdasdad")
+    }
   },
   ],
 });
