@@ -46,6 +46,7 @@ h1 {
 }
 
 h2 {
+  text-align: center;
   font-size: 4vw;
   line-height: 1.4;
 }
@@ -89,7 +90,6 @@ a:hover {
 
   & img {
     width: 70px;
-    max-width: 70px;
     opacity: 1;
     transition: 0.5s;
   }
@@ -117,7 +117,6 @@ header {
 }
 
 &.is-seq1 {
-  --base-color: rgb(197, 197, 197);
 
   background: #0f0c29; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #24243e, #0e0e0f, #92131e); /* Chrome 10-25, Safari 5.1-6 */
@@ -152,7 +151,6 @@ header {
 .cover img {
   position: absolute !important;
   width: 300px;
-  max-width: 300px;
   right: 0px;
   top: 50vh;
 }
@@ -181,4 +179,9 @@ header {
   justify-content: center;
   transform: translateY(-100%);
   z-index: 1;
+}
+
+.text { 
+  margin: 4rem auto;
+  text-align: center;
 }

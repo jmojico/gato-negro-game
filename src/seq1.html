@@ -7,8 +7,6 @@
     <title>El Gato Negro - Historia Interactiva</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link href="assets/app.css" rel="stylesheet">
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 </head>
 
 <body data-barba="wrapper">
@@ -17,82 +15,26 @@
             <h2>Cover Screen</h2>
         </div>
         <div class="content">
-            <h2 id="title">Tu vida es rutinaria y gris.</h2>
-            <p> El gato esta sentado en tu regazo.</p>
-            <p> No toleras su presencia. </p>
-            <a onClick="easeOut()" href="seq3.html">
-                <div class="icon"><img src="./images/puchoicon.svg"></img></div>
-            </a>
-            <a onClick="easeOut()" href="seq2.html">
-                <div class="icon"><img src="./images/botaicon.svg"></img></div>
-            </a>
-            <a onClick="easeOut()" href="seq5.html">
-                <div class="icon"><img src="./images/vinoicon.svg"></img></div>
-            </a>
+                <h2 id="title">Tu vida es rutinaria y gris.</h2>
+            <div class="text">
+
+                <p> El gato esta sentado en tu regazo.</p>
+                <p> No toleras su presencia. </p>
+            </div>
+            <div class="buttons">
+                <a href="seq3.html">
+                    <div class="icon"><img src="./images/puchoicon.svg"></img></div>
+                </a>
+                <a href="seq2.html">
+                    <div class="icon"><img src="./images/botaicon.svg"></img></div>
+                </a>
+                <a href="seq5.html">
+                    <div class="icon"><img src="./images/vinoicon.svg"></img></div>
+                </a>
+            </div>
         </div>
         <div class="cover"><img src="./images/telaraña.svg"></img></div>
     </header>
-    <script>
-
-        /* Animacion Texto Titulo */
-        var title = document.getElementById('title');
-        var titleWriter = new Typewriter(title, {
-            delay: 50
-        });
-
-        titleWriter.typeString('Tu vida es rutinaria y gris.')
-            .pauseFor(500)
-            .deleteChars(5)
-            .typeString('triste.')
-            .start();
-
-        /* Animacion Texto Parrafo */
-        var textWrapper = document.querySelector('p');
-        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-        anime.timeline()
-            .add({
-                targets: 'p',
-                opacity: [0, 1],
-                easing: "easeInOutQuad",
-                duration: 2250,
-                delay: 4000,
-            });
-
-        function easeOut() {
-            anime.timeline().add({
-                targets: 'p',
-                opacity: 0,
-                duration: 1000,
-                easing: "easeOutExpo",
-                delay: 1000
-            });
-        }
-
-               /* Animacion Botones */
-
-               var textWrapper = document.querySelector('p');
-        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-        anime.timeline()
-            .add({
-                targets: 'p',
-                opacity: [0, 1],
-                easing: "easeInOutQuad",
-                duration: 2250,
-                delay: 4000,
-            });
-
-        function easeOut() {
-            anime.timeline().add({
-                targets: 'p',
-                opacity: 0,
-                duration: 1000,
-                easing: "easeOutExpo",
-                delay: 1000
-            });
-        }
-    </script>
     <script src="assets/app.js"></script>
 </body>
 

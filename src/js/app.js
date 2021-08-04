@@ -1,8 +1,8 @@
 import barba from '@barba/core';
 import barbaCss from '@barba/css';
+import { seq1 } from './sequences/seq1';
 
 barba.use(barbaCss);
-console.log("HGO")
 const body = document.querySelector('body');
 
 barba.hooks.before((data) => {
@@ -32,9 +32,9 @@ barba.init({
     leave() {},
     enter() {},
     afterEnter(){
-      console.log("asdasdasdad")
     }
   },
   ],
+  views: [seq1]
 });
 
