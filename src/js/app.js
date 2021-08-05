@@ -27,16 +27,7 @@ barba.hooks.before((data) => {
 
 barba.init({
   transitions: [{
-    name: 'home',
-    beforeOnce() {
-
-    },
-    once() {
-
-    },
-    afterOnce() {
-
-    },
+    name: 'home'
   },
   {
     name: 'seq1',
@@ -83,7 +74,8 @@ barba.init({
   {
     name: 'seq7',
     leave() {},
-    enter() {},
+    enter() {
+    },
     afterEnter(){
     }
   },

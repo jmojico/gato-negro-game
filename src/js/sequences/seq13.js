@@ -3,6 +3,10 @@ import Typewriter from 'typewriter-effect/dist/core';
 
 const seq13 = {
     namespace: 'seq13',
+    afterEnter() {
+        const bloodSound = new Audio('../resources/cat_delator.wav').play();
+        bloodSound.play();
+    },
     beforeEnter() {
 
         /* Animacion Texto Titulo */

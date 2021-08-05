@@ -3,6 +3,10 @@ import Typewriter from 'typewriter-effect/dist/core';
 
 const seq8 = {
     namespace: 'seq8',
+    afterEnter() {
+        const bloodSound = new Audio('../resources/policia.wav').play();
+        bloodSound.play();
+    },
     beforeEnter() {
 
         /* Animacion Texto Titulo */

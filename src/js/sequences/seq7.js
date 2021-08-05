@@ -3,8 +3,8 @@ import Typewriter from 'typewriter-effect/dist/core';
 
 const seq7 = {
     namespace: 'seq7',
-    beforeEnter() {
 
+    beforeEnter() {
         /* Animacion Texto Titulo */
         var title = document.getElementById('title');
         var titleWriter = new Typewriter(title, {
@@ -13,6 +13,7 @@ const seq7 = {
 
         titleWriter.typeString('Escondes el cadaver en la pared.')
             .start();
+
 
         /* Animacion Texto Parrafo */
         anime.timeline()

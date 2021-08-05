@@ -3,6 +3,10 @@ import Typewriter from 'typewriter-effect/dist/core';
 
 const seq11 = {
     namespace: 'seq11',
+    afterEnter() {
+        const bloodSound = new Audio('../resources/horror.mp3').play();
+        bloodSound.play();
+    },
     beforeEnter() {
 
         /* Animacion Texto Titulo */

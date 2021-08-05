@@ -3,6 +3,11 @@ import Typewriter from 'typewriter-effect/dist/core';
 
 const seq6 = {
     namespace: 'seq6',
+    beforeLeave(){
+        const bloodSound = new Audio('../resources/blood_gore.wav').play();
+        bloodSound.volume = 0.4;
+        bloodSound.play();
+    },
     beforeEnter() {
 
         /* Animacion Texto Titulo */
