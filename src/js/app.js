@@ -1,6 +1,7 @@
 import barba from '@barba/core';
 import barbaCss from '@barba/css';
 import seq1 from './sequences/seq1';
+import seq1Audio from './sequences/seq1-audio';
 import seq2 from './sequences/seq2';
 import seq3 from './sequences/seq3';
 import seq4 from './sequences/seq4';
@@ -27,10 +28,17 @@ barba.hooks.before((data) => {
 
 barba.init({
   transitions: [{
-    name: 'home'
+    name: 'home',
   },
   {
     name: 'seq1',
+    leave() {},
+    enter() {},
+    afterEnter(){
+    }
+  },
+  {
+    name: 'seq1-audio',
     leave() {},
     enter() {},
     afterEnter(){
@@ -129,6 +137,6 @@ barba.init({
     }
   },
   ],
-  views: [seq1,seq2,seq3,seq4,seq5,seq6,seq7,seq8,seq9,seq10,seq11,seq12,seq13,seq14]
+  views: [seq1,seq1Audio,seq2,seq3,seq4,seq5,seq6,seq7,seq8,seq9,seq10,seq11,seq12,seq13,seq14]
 });
 
