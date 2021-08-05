@@ -1,6 +1,7 @@
 import barba from '@barba/core';
 import barbaCss from '@barba/css';
-import { seq1 } from './sequences/seq1';
+import seq1 from './sequences/seq1';
+import seq2 from './sequences/seq2';
 
 barba.use(barbaCss);
 const body = document.querySelector('body');
@@ -29,12 +30,12 @@ barba.init({
     to: {
       namespace: ['seq1'],
     },
-    leave() {},
-    enter() {},
-    afterEnter(){
+    leave() { },
+    enter() { },
+    afterEnter() {
     }
   },
   ],
-  views: [seq1]
+  views: [seq1, seq2]
 });
 

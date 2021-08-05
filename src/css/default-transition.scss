@@ -1,0 +1,25 @@
+/* default-transition out current container */
+
+.default-transition-leave {
+    opacity: 1;
+}
+
+.default-transition-leave-active {
+    transition: opacity 1s linear;
+}
+
+.default-transition-leave-to {
+    opacity: 0;
+}
+
+.default-transition-enter {
+    opacity: 0;
+}
+
+.default-transition-enter-active {
+    transition: opacity 1s linear;
+}
+
+.default-transition-enter-to {
+    opacity: 1;
+}

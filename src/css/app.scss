@@ -116,8 +116,7 @@ header {
   background-color: #000000;
 }
 
-&.is-seq1 {
-
+&.default-seq {
   background: #0f0c29; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #24243e, #0e0e0f, #92131e); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
@@ -135,6 +134,7 @@ header {
   background-color: #000000;
 }
 }
+
 
 @keyframes gradient {
   0% {
@@ -166,7 +166,6 @@ header {
   opacity: 1;
   transform: translateY(0);
 }
-
 .transition {
   position: fixed;
   width: 100%;
@@ -180,7 +179,6 @@ header {
   transform: translateY(-100%);
   z-index: 1;
 }
-
 .text { 
   margin: 4rem auto;
   text-align: center;

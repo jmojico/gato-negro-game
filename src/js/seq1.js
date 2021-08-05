@@ -3,7 +3,7 @@ import Typewriter from 'typewriter-effect/dist/core';
 
 const seq1 = {
     namespace: 'seq1',
-    beforeEnter(){
+    beforeEnter() {
 
         /* Animacion Texto Titulo */
         var title = document.getElementById('title');
@@ -27,7 +27,7 @@ const seq1 = {
                 delay: 4000,
             });
 
-               /* Animacion Botones */
+        /* Animacion Botones */
         anime.timeline()
             .add({
                 targets: '.buttons',
@@ -37,14 +37,14 @@ const seq1 = {
                 delay: 8000,
             });
 
-            anime.timeline().add({
-                targets: '.cover',
-                opacity: [0, 1],
-                easing: "easeInOutQuad",
-                duration: 2250,
-                
-    })
-  }
+        anime.timeline().add({
+            targets: '.cover',
+            opacity: [0, 1],
+            easing: "easeInOutQuad",
+            duration: 2250,
+
+        })
+    }
 }
 
 export default seq1;
