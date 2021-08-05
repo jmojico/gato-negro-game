@@ -1,9 +1,9 @@
 import anime from 'animejs/lib/anime.es.js';
 import Typewriter from 'typewriter-effect/dist/core';
 
-const seq1 = {
-    namespace: 'seq1',
-    beforeEnter(){
+const seq6 = {
+    namespace: 'seq6',
+    beforeEnter() {
 
         /* Animacion Texto Titulo */
         var title = document.getElementById('title');
@@ -11,10 +11,7 @@ const seq1 = {
             delay: 50
         });
 
-        titleWriter.typeString('Tu vida es rutinaria y gris.')
-            .pauseFor(500)
-            .deleteChars(5)
-            .typeString('triste.')
+        titleWriter.typeString('Tu pareja te detiene.')
             .start();
 
         /* Animacion Texto Parrafo */
@@ -24,28 +21,29 @@ const seq1 = {
                 opacity: [0, 1],
                 easing: "easeInOutQuad",
                 duration: 2250,
-                delay: 4000,
+                delay: 2000,
             });
 
-               /* Animacion Botones */
+        /* Animacion Botones */
         anime.timeline()
             .add({
                 targets: '.buttons',
                 opacity: [0, 1],
                 easing: "easeInOutQuad",
                 duration: 2250,
-                delay: 8000,
+                delay: 3000,
             });
 
-            anime.timeline().add({
-                targets: '.cover',
-                opacity: [0, 1],
-                easing: "easeInOutQuad",
-                duration: 2250,
-                delay: 7000,
-                
-    })
-  }
+        /* Animacion Imagena */
+        anime.timeline().add({
+            targets: '.cover',
+            opacity: [0, 1],
+            easing: "easeInOutQuad",
+            duration: 2250,
+            delay: 4000,
+
+        })
+    }
 }
 
-export default seq1;
+export default seq6;

@@ -1,8 +1,8 @@
 import anime from 'animejs/lib/anime.es.js';
 import Typewriter from 'typewriter-effect/dist/core';
 
-const seq1 = {
-    namespace: 'seq1',
+const seq8 = {
+    namespace: 'seq8',
     beforeEnter() {
 
         /* Animacion Texto Titulo */
@@ -11,10 +11,7 @@ const seq1 = {
             delay: 50
         });
 
-        titleWriter.typeString('Tu vida es rutinaria y gris.')
-            .pauseFor(500)
-            .deleteChars(5)
-            .typeString('triste.')
+        titleWriter.typeString('La policia llama a tu puerta.')
             .start();
 
         /* Animacion Texto Parrafo */
@@ -24,7 +21,7 @@ const seq1 = {
                 opacity: [0, 1],
                 easing: "easeInOutQuad",
                 duration: 2250,
-                delay: 4000,
+                delay: 2000,
             });
 
         /* Animacion Botones */
@@ -34,17 +31,19 @@ const seq1 = {
                 opacity: [0, 1],
                 easing: "easeInOutQuad",
                 duration: 2250,
-                delay: 8000,
+                delay: 3000,
             });
 
+        /* Animacion Imagena */
         anime.timeline().add({
             targets: '.cover',
             opacity: [0, 1],
             easing: "easeInOutQuad",
             duration: 2250,
+            delay: 4000,
 
         })
     }
 }
 
-export default seq1;
+export default seq8;
