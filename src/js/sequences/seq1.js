@@ -1,13 +1,20 @@
 import anime from 'animejs/lib/anime.es.js';
 import Typewriter from 'typewriter-effect/dist/core';
+import {Howl} from 'howler';
 
 const seq1 = {
     namespace: 'seq1',
     afterEnter() {
         setTimeout(()=> {
-            const bloodSound = new Audio('../resources/cat_ronron.wav').play();
-         bloodSound.play();
-        },6000);
+
+            const catronron = new Howl('../resources/cat_ronron.mp3',
+            {
+                html5: true,
+                loop: true,
+            });
+         catronron.play();
+
+        },10000);
          
     },
     beforeEnter() {

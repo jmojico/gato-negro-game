@@ -40,6 +40,7 @@
     "@barba/core": "^2.8.0",
     "@barba/css": "^2.1.15",
     "animejs": "^3.2.1",
+    "howler": "^2.2.3",
     "reset-css": "^5.0.1"
   }
 }

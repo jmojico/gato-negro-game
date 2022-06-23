@@ -1,20 +1,31 @@
 import anime from 'animejs/lib/anime.es.js';
 import Typewriter from 'typewriter-effect/dist/core';
+import {Howl} from 'howler';
 
 const seq1Audio = {
     namespace: 'seq1-audio',
     afterEnter() {
 
-        const song = new Audio('../resources/Misterioso-Suceso.mp3').play();
-        song.play();
-
-        setTimeout(()=> {
-            const bloodSound = new Audio('../resources/cat_ronron.wav').play();
-         bloodSound.play();
-        },6000);
+          const catronron = new Howl({
+            src: ['../resources/cat_ronron.mp3'],
+            html5: true,
+            volume: 0.6,
+          });
+          
+        catronron.play();
          
     },
     beforeEnter() {
+
+        const song = new Howl({
+            src: ['../resources/Misterioso-Suceso.mp3'],
+            html5: true,
+            loop: true,
+            volume: 0.7,
+          });
+          
+          song.play();
+
         /* Animacion Texto Titulo */
         var title = document.getElementById('title');
         var titleWriter = new Typewriter(title, {

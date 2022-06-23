@@ -1,11 +1,17 @@
 import anime from 'animejs/lib/anime.es.js';
 import Typewriter from 'typewriter-effect/dist/core';
+import {Howl} from 'howler';
+
 
 const seq13 = {
     namespace: 'seq13',
     afterEnter() {
-        const bloodSound = new Audio('../resources/cat_delator.wav').play();
-        bloodSound.play();
+        const catDelator = new Howl({
+            src: ['../resources/cat_delator.mp3'],
+            html5: true,
+            volume: 0.7,
+          });
+        catDelator.play();
     },
     beforeEnter() {
 

@@ -1,14 +1,22 @@
 import anime from 'animejs/lib/anime.es.js';
 import Typewriter from 'typewriter-effect/dist/core';
+import {Howl} from 'howler';
 
 const seq2 = {
     namespace: 'seq2',
     afterEnter() {
-        const bloodSound = new Audio('../resources/cat_scream.wav').play();
-        bloodSound.play();
+      
     },
     beforeEnter() {
 
+        const catscream = new Howl({
+            src: ['../resources/cat_scream.mp3'],
+            html5: true,
+            volume: 0.6,
+          });
+          
+        catscream.play();
+        
         /* Animacion Texto Titulo */
         var title = document.getElementById('title');
         var titleWriter = new Typewriter(title, {

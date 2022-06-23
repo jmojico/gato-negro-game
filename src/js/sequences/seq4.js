@@ -1,12 +1,17 @@
 import anime from 'animejs/lib/anime.es.js';
 import Typewriter from 'typewriter-effect/dist/core';
+import { Howl } from 'howler';
 
 const seq4 = {
     namespace: 'seq4',
     beforeLeave(){
-        const bloodSound = new Audio('../resources/blood_gore.wav').play();
-        bloodSound.volume = 0.4;
-        bloodSound.play();
+        const bloodSound = new Howl({
+            src: ['../resources/blood_gore.mp3'],
+            html5: true,
+            volume: 0.3,
+          });
+          
+          bloodSound.play();
     },
     beforeEnter() {
 

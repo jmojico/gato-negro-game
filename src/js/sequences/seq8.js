@@ -1,11 +1,18 @@
 import anime from 'animejs/lib/anime.es.js';
 import Typewriter from 'typewriter-effect/dist/core';
+import { Howl } from 'howler';
 
 const seq8 = {
     namespace: 'seq8',
     afterEnter() {
-        const bloodSound = new Audio('../resources/policia.wav').play();
-        bloodSound.play();
+        const police = new Howl({
+            src: ['../resources/policia.mp3'],
+            html5: true,
+            volume: 0.7,
+        });
+
+        police.play();
+
     },
     beforeEnter() {
 
