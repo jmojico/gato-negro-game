@@ -39,13 +39,6 @@ module.exports = (env, argv) => ({
   module: {
     rules: [
       {
-        test: /\.mp3$/,
-        loader: 'file-loader',
-        options: {
-          name: '[path][name].[ext]'
-        }
-      },
-      {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
