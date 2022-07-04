@@ -6,7 +6,7 @@ const seq8 = {
     namespace: 'seq8',
     afterEnter() {
         const police = new Howl({
-            src: ['../resources/policia.mp3'],
+            src: ['./resources/policia.mp3'],
             html5: true,
             volume: 0.7,
         });

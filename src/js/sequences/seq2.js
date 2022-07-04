@@ -10,7 +10,7 @@ const seq2 = {
     beforeEnter() {
 
         const catscream = new Howl({
-            src: ['../resources/cat_scream.mp3'],
+            src: ['./resources/cat_scream.mp3'],
             html5: true,
             volume: 0.6,
           });

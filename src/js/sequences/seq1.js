@@ -1,10 +1,11 @@
 import anime from 'animejs/lib/anime.es.js';
 import Typewriter from 'typewriter-effect/dist/core';
-import {Howl} from 'howler';
+import {Howl, Howler} from 'howler';
 
 const seq1 = {
     namespace: 'seq1',
     afterEnter() {
+        Howler.unload();
         setTimeout(()=> {
 
             const catronron = new Howl('../resources/cat_ronron.mp3',

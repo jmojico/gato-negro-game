@@ -7,7 +7,7 @@ const seq12 = {
     namespace: 'seq12',
     afterEnter() {
         const horrorSound = new Howl({
-            src: ['../resources/horror.mp3'],
+            src: ['./resources/horror.mp3'],
             html5: true,
             volume: 0.7,
           });

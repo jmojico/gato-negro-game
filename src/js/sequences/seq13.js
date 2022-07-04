@@ -7,7 +7,7 @@ const seq13 = {
     namespace: 'seq13',
     afterEnter() {
         const catDelator = new Howl({
-            src: ['../resources/cat_delator.mp3'],
+            src: ['./resources/cat_delator.mp3'],
             html5: true,
             volume: 0.7,
           });

@@ -6,7 +6,7 @@ const seq6 = {
     namespace: 'seq6',
     beforeLeave(){
         const bloodSound = new Howl({
-            src: ['../resources/blood_gore.mp3'],
+            src: ['./resources/blood_gore.mp3'],
             html5: true,
             volume: 0.3,
           });
