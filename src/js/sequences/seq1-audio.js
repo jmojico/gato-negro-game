@@ -18,7 +18,7 @@ const seq1Audio = {
     beforeEnter() {
 
         const song = new Howl({
-            src: ['../resources/Misterioso-Suceso.mp3'],
+            src: ['../resources/Misterioso-suceso.mp3'],
             html5: true,
             loop: true,
             volume: 0.7,
