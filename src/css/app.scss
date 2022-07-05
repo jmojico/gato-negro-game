@@ -147,9 +147,11 @@ header {
   background-color: #000000;
 }
 
+@media(min-width: 800px){
 .buttons {
   display: flex;
   justify-content: center;
+}
 }
 
 &.default-seq {

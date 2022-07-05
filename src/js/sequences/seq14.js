@@ -1,8 +1,18 @@
 import anime from 'animejs/lib/anime.es.js';
 import Typewriter from 'typewriter-effect/dist/core';
+import {Howl} from 'howler';
 
 const seq14 = {
     namespace: 'seq14',
+    afterEnter(){
+        setTimeout(() => {
+            const horrorSound = new Howl({
+                src: ['./resources/horror.mp3'],
+                html5: true,
+                volume: 0.7,
+            });
+            horrorSound.play() }, 8000);
+    },
     beforeEnter() {
 
         /* Animacion Texto Titulo */

@@ -6,6 +6,15 @@ import {Howl} from 'howler';
 const seq13 = {
     namespace: 'seq13',
     afterEnter() {
+        
+        setTimeout(() => {
+            const horrorSound = new Howl({
+                src: ['./resources/horror.mp3'],
+                html5: true,
+                volume: 0.7,
+            });
+            horrorSound.play() }, 8000);
+
         const catDelator = new Howl({
             src: ['./resources/cat_delator.mp3'],
             html5: true,
